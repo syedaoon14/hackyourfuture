@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    
+    background-color: lightblue;    
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-top: 20%;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(46, 139, 87, 0.2), 0 4px 30px rgba(46, 139, 87, 0.15); /* Sea green shadow */
+    padding: 10% 5%;
+    position: relative;
+    border: 2px solid #333;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid #eee;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.profile-pic:hover {
+    transform: scale(1.5); /* Enlarge the profile picture */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.sidebar ul li a.active:hover  {
+    color: red;
+    
+}
+
+
+
+.sidebar p {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40%;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarge the icons */
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-with-me {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.back {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    top: 20px;
+    right: 20px;
+    margin-top: 0%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.work-with-me:hover {
+    transform: scale(1.2); /* Enlarge the button */
+}
+
+.intro-box {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-boxes {
+    text-align: center;
+    width: 30%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.whoami-box {
+    text-align: center;
+    text-align: justify;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    line-height: 1.5;
+
+}
+
+.form-container {
+    text-align: center;
+    align-items: center;
+    text-align: justify;
+    width: 70%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    line-height: 1.5;
+    margin-left: 12%;
+}
+
+.experience-boxes ul li {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.submit-button {
+    margin: 2%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    top: 20px;
+    width: 30%;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 35%;
+}
+
+
+.all-three-boxes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* Enlarge the intro box when the "Home" link is clicked */
+.sidebar:focus-within ~ .main-content .intro-box {
+    transform: scale(1.5); /* Enlarge intro box */
+}
+
+
+
+
+
+.intro-box p {
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro-box span {
+    color: red;
+    font-weight: bold;
+}
+
+.read-more {
+    background-color: #f9f9f9;
+    border: 1px solid red;
+    color: red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    transform: scale(1.2); /* Enlarge the button */
+}
+
+.form {
+display: flex;
+flex-direction: column;
+
+}
